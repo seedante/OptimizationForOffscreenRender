@@ -82,3 +82,37 @@ About shadow, shadowPath is better: lower GPU utilization.
 The best performance! Only problem is how get these image. Paint or draw. With a image, blend and mask get opposite effect. This solution is fit for rounded corner and mask. 
 
 2.For RoundedCorener: redraw a rouned corner image with Core Graphics API. 
+
+##Test Rasterization
+
+Test Environment：
+
+- iPad mini 1st generation with iOS 9.3.1
+- Xcode 7.3 with Swift 2.2
+- OS X 10.11.4
+
+CPU Utilization for all testes are not high: the max utilization is almost 50%.
+
+| Condition |RoundedCorner Count OnScreen | Average FPS |Average GPU Utilization |Trigger OffscreenRender | 
+|---|---|---|---|---|---|
+|shouldRasterize = false|10|almost 44|over 80%|YES
+|shouldRasterize = true |10|over 55|under 20%|YES
+|shouldRasterize = false |20|almost 35|under 90%|YES
+|shouldRasterize = true |20|almost 55|almost 20%|YES
+
+| Condition | Shadow Count OnScreen | Average FPS |Average GPU Utilization |Trigger OffscreenRender | 
+|---|---|---|---|---|---|
+|shouldRasterize = false|10|almost 38|almost 73%|YES
+|shouldRasterize = true |10|over 55|under 30%|YES
+|shadowPath != nil |10|over 56|under 15%|NO
+|shouldRasterize = false |20|almost 22|almost 80%|YES
+|shouldRasterize = true |20|almost 55|under 40%|YES
+|shadowPath != nil |20|over 56|under 20%|NO
+(when test shouldResterize, shadowPath = nil; when shadowPath!= nil, shouldResterize = false)
+
+| Condition | Mask Count OnScreen | Average FPS |Average GPU Utilization |Trigger OffscreenRender | 
+|---|---|---|---|---|---|
+|shouldRasterize = false|10|almost 55|almost 60%|YES
+|shouldRasterize = true |10|over 55|almost 20%|YES
+|shouldRasterize = false |20|almost 37|almost 75%|YES
+|shouldRasterize = true |20|almost 55|under 30%|YES
