@@ -11,6 +11,10 @@ Four actions can trigger offscreen render:
 3. Mask
 4. GroupOpacity(almost no impact to graphics performance in my demo)
 
+Demo test all above effects and optimize the performance in a table view.
+
+![](http://upload-images.jianshu.io/upload_images/37334-db123028f84273b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 Core Graphics API don't trigger offscreen render. You should check it with Core Animation Instruments with debug option 'Color Offscreen-Renderd Yellow'.
 
 ![Core Animation Instruments Debug Options](http://upload-images.jianshu.io/upload_images/37334-909659db842314aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
