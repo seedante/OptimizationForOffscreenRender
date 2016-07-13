@@ -1,12 +1,12 @@
 ## OptimizationForOffscreenRender
 
-[中文版](http://www.jianshu.com/p/ca51c9d3575b)
+[中文博客：离屏渲染优化](http://www.jianshu.com/p/ca51c9d3575b)
 
 ## Trigger Action
 
 Four actions can trigger offscreen render:
 
-1. RoundedCorener
+1. RoundedCorner
 2. Shadow
 3. Mask
 4. GroupOpacity(almost no impact to graphics performance in my demo)
