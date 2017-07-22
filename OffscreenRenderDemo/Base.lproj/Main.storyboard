@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="msD-We-eUc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E192b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="msD-We-eUc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Table View Controller-->
@@ -10,148 +15,81 @@
             <objects>
                 <tableViewController id="msD-We-eUc" customClass="TableViewController" customModule="OffscreenRenderDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="81F-6I-v7E">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="yvl-e3-nSA">
-                                <rect key="frame" x="0.0" y="28" width="600" height="100"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yvl-e3-nSA" id="06d-Dq-4Vh">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-pl-M1T">
-                                            <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                            <variation key="heightClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                            </variation>
+                                        <imageView opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gmd-pl-M1T" userLabel="contentImg">
+                                            <rect key="frame" x="20" y="10" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="80" id="Alz-wD-kn1"/>
+                                                <constraint firstAttribute="height" constant="80" id="jNG-gV-AKc"/>
+                                            </constraints>
                                         </imageView>
-                                        <imageView opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VLT-8C-Lc5">
-                                            <rect key="frame" x="120" y="10" width="80" height="80"/>
-                                            <variation key="heightClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="120" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="120" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="120" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="120" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="120" y="10" width="80" height="80"/>
-                                            </variation>
+                                        <imageView opaque="NO" userInteractionEnabled="NO" tag="20" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VLT-8C-Lc5" userLabel="contentImg2">
+                                            <rect key="frame" x="112" y="10" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="0P8-Go-YcP"/>
+                                                <constraint firstAttribute="width" constant="80" id="8yz-Up-GAB"/>
+                                            </constraints>
                                         </imageView>
-                                        <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="60" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PKc-dl-att">
-                                            <rect key="frame" x="120" y="10" width="80" height="80"/>
-                                            <variation key="heightClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="120" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="120" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="120" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="120" y="10" width="80" height="80"/>
-                                            </variation>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="30" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OffscreenRender100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvv-2U-k3r">
-                                            <rect key="frame" x="315" y="8" width="180" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="40" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100离屏渲染" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsV-DY-b6T">
+                                            <rect key="frame" x="191.5" y="59" width="180" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="180" id="WWE-Yx-0NW"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="heightClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="323" y="8" width="180" height="21"/>
-                                            </variation>
-                                            <variation key="heightClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="316" y="8" width="180" height="21"/>
-                                            </variation>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="220" y="8" width="180" height="21"/>
-                                            </variation>
-                                            <variation key="widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="310" y="8" width="180" height="21"/>
-                                            </variation>
-                                            <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="314" y="8" width="180" height="21"/>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="220" y="8" width="180" height="21"/>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="407" y="8" width="180" height="21"/>
-                                            </variation>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="40" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100离屏渲染" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsV-DY-b6T">
-                                            <rect key="frame" x="315" y="71" width="180" height="21"/>
+                                        <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="50" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="es1-5p-0sJ" userLabel="maskImg2">
+                                            <rect key="frame" x="112" y="10" width="80" height="80"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="30" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OffscreenRender100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvv-2U-k3r">
+                                            <rect key="frame" x="202" y="20" width="159" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="heightClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="323" y="71" width="180" height="21"/>
-                                            </variation>
-                                            <variation key="heightClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="316" y="71" width="180" height="21"/>
-                                            </variation>
-                                            <variation key="widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="220" y="71" width="180" height="21"/>
-                                            </variation>
-                                            <variation key="widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="310" y="71" width="180" height="21"/>
-                                            </variation>
-                                            <variation key="heightClass=compact-widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="310" y="71" width="180" height="21"/>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="220" y="71" width="180" height="21"/>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="407" y="79" width="180" height="21"/>
-                                            </variation>
                                         </label>
-                                        <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="50" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="es1-5p-0sJ">
-                                            <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                            <variation key="heightClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                                <rect key="frame" x="10" y="10" width="80" height="80"/>
-                                            </variation>
+                                        <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="60" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PKc-dl-att" userLabel="maskImg">
+                                            <rect key="frame" x="20" y="10" width="80" height="80"/>
                                         </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="es1-5p-0sJ" firstAttribute="centerY" secondItem="VLT-8C-Lc5" secondAttribute="centerY" id="4sL-X9-VOJ"/>
+                                        <constraint firstItem="es1-5p-0sJ" firstAttribute="height" secondItem="VLT-8C-Lc5" secondAttribute="height" id="GKs-ul-Qrw"/>
+                                        <constraint firstItem="PKc-dl-att" firstAttribute="height" secondItem="gmd-pl-M1T" secondAttribute="height" id="KUq-SF-3sk"/>
+                                        <constraint firstItem="es1-5p-0sJ" firstAttribute="width" secondItem="VLT-8C-Lc5" secondAttribute="width" id="Q83-i0-r7r"/>
+                                        <constraint firstItem="gmd-pl-M1T" firstAttribute="centerY" secondItem="06d-Dq-4Vh" secondAttribute="centerY" id="QK5-I4-58c"/>
+                                        <constraint firstItem="PKc-dl-att" firstAttribute="centerX" secondItem="gmd-pl-M1T" secondAttribute="centerX" id="RlM-bX-xPr"/>
+                                        <constraint firstItem="VLT-8C-Lc5" firstAttribute="leading" secondItem="PKc-dl-att" secondAttribute="trailing" constant="12" id="SMj-30-t2K"/>
+                                        <constraint firstItem="XsV-DY-b6T" firstAttribute="centerX" secondItem="Wvv-2U-k3r" secondAttribute="centerX" id="Tkg-6e-eSi"/>
+                                        <constraint firstItem="VLT-8C-Lc5" firstAttribute="centerY" secondItem="06d-Dq-4Vh" secondAttribute="centerY" id="YRB-WJ-ee8"/>
+                                        <constraint firstItem="gmd-pl-M1T" firstAttribute="leading" secondItem="06d-Dq-4Vh" secondAttribute="leadingMargin" constant="12" id="aQE-ZV-IJz"/>
+                                        <constraint firstItem="Wvv-2U-k3r" firstAttribute="leading" secondItem="es1-5p-0sJ" secondAttribute="trailing" constant="10" id="bnh-OS-AIJ"/>
+                                        <constraint firstItem="XsV-DY-b6T" firstAttribute="bottom" secondItem="es1-5p-0sJ" secondAttribute="bottom" constant="-10" id="deR-iQ-n21"/>
+                                        <constraint firstItem="PKc-dl-att" firstAttribute="width" secondItem="gmd-pl-M1T" secondAttribute="width" id="olz-2Q-SbV"/>
+                                        <constraint firstItem="Wvv-2U-k3r" firstAttribute="top" secondItem="es1-5p-0sJ" secondAttribute="top" constant="10" id="p3w-7w-kZ1"/>
+                                        <constraint firstItem="PKc-dl-att" firstAttribute="centerY" secondItem="gmd-pl-M1T" secondAttribute="centerY" id="uF7-VI-bdq"/>
+                                        <constraint firstItem="es1-5p-0sJ" firstAttribute="centerX" secondItem="VLT-8C-Lc5" secondAttribute="centerX" id="x6E-LF-FmV"/>
+                                    </constraints>
                                     <variation key="default">
                                         <mask key="subviews">
-                                            <exclude reference="PKc-dl-att"/>
                                             <exclude reference="es1-5p-0sJ"/>
+                                            <exclude reference="PKc-dl-att"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular">
                                         <mask key="subviews">
-                                            <include reference="PKc-dl-att"/>
                                             <include reference="es1-5p-0sJ"/>
+                                            <include reference="PKc-dl-att"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -173,15 +111,15 @@
             <objects>
                 <tableViewController id="2s7-eN-C5S" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ci8-Fs-bDE">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="adz-Pa-Cjx">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="adz-Pa-Cjx" id="NVI-eR-xvz">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
